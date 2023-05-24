@@ -1,0 +1,7 @@
+<%@restaurants.each do |restaurant| %>
+<li><%=link_to restaurant.name,
+{:action => 'show', :id => restaurant.id}%></li>
+<%end%>
+
+<%=link_to "+ Add a new task",
+{:action => 'new'}%>
